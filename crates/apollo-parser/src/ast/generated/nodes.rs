@@ -8,7 +8,7 @@ use crate::{
 };
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct Name {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl Name {
     pub fn ident_token(&self) -> Option<SyntaxToken> {
@@ -17,7 +17,7 @@ impl Name {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct Document {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl Document {
     pub fn definitions(&self) -> AstChildren<Definition> {
@@ -26,7 +26,7 @@ impl Document {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct OperationDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl OperationDefinition {
     pub fn operation_type(&self) -> Option<OperationType> {
@@ -47,7 +47,7 @@ impl OperationDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct FragmentDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl FragmentDefinition {
     pub fn fragment_token(&self) -> Option<SyntaxToken> {
@@ -68,7 +68,7 @@ impl FragmentDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct DirectiveDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl DirectiveDefinition {
     pub fn description(&self) -> Option<Description> {
@@ -98,7 +98,7 @@ impl DirectiveDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct SchemaDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl SchemaDefinition {
     pub fn description(&self) -> Option<Description> {
@@ -122,7 +122,7 @@ impl SchemaDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct ScalarTypeDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl ScalarTypeDefinition {
     pub fn description(&self) -> Option<Description> {
@@ -140,7 +140,7 @@ impl ScalarTypeDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct ObjectTypeDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl ObjectTypeDefinition {
     pub fn description(&self) -> Option<Description> {
@@ -164,7 +164,7 @@ impl ObjectTypeDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct InterfaceTypeDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl InterfaceTypeDefinition {
     pub fn description(&self) -> Option<Description> {
@@ -188,7 +188,7 @@ impl InterfaceTypeDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct UnionTypeDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl UnionTypeDefinition {
     pub fn description(&self) -> Option<Description> {
@@ -209,7 +209,7 @@ impl UnionTypeDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct EnumTypeDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl EnumTypeDefinition {
     pub fn description(&self) -> Option<Description> {
@@ -230,7 +230,7 @@ impl EnumTypeDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct InputObjectTypeDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl InputObjectTypeDefinition {
     pub fn description(&self) -> Option<Description> {
@@ -251,7 +251,7 @@ impl InputObjectTypeDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct SchemaExtension {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl SchemaExtension {
     pub fn extend_token(&self) -> Option<SyntaxToken> {
@@ -275,7 +275,7 @@ impl SchemaExtension {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct ScalarTypeExtension {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl ScalarTypeExtension {
     pub fn extend_token(&self) -> Option<SyntaxToken> {
@@ -293,7 +293,7 @@ impl ScalarTypeExtension {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct ObjectTypeExtension {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl ObjectTypeExtension {
     pub fn extend_token(&self) -> Option<SyntaxToken> {
@@ -317,7 +317,7 @@ impl ObjectTypeExtension {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct InterfaceTypeExtension {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl InterfaceTypeExtension {
     pub fn extend_token(&self) -> Option<SyntaxToken> {
@@ -341,7 +341,7 @@ impl InterfaceTypeExtension {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct UnionTypeExtension {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl UnionTypeExtension {
     pub fn extend_token(&self) -> Option<SyntaxToken> {
@@ -362,7 +362,7 @@ impl UnionTypeExtension {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct EnumTypeExtension {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl EnumTypeExtension {
     pub fn extend_token(&self) -> Option<SyntaxToken> {
@@ -383,7 +383,7 @@ impl EnumTypeExtension {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct InputObjectTypeExtension {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl InputObjectTypeExtension {
     pub fn extend_token(&self) -> Option<SyntaxToken> {
@@ -404,7 +404,7 @@ impl InputObjectTypeExtension {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct OperationType {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl OperationType {
     pub fn query_token(&self) -> Option<SyntaxToken> {
@@ -419,7 +419,7 @@ impl OperationType {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct VariableDefinitions {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl VariableDefinitions {
     pub fn l_paren_token(&self) -> Option<SyntaxToken> {
@@ -434,7 +434,7 @@ impl VariableDefinitions {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct Directives {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl Directives {
     pub fn directives(&self) -> AstChildren<Directive> {
@@ -443,7 +443,7 @@ impl Directives {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct SelectionSet {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl SelectionSet {
     pub fn l_curly_token(&self) -> Option<SyntaxToken> {
@@ -458,7 +458,7 @@ impl SelectionSet {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct Field {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl Field {
     pub fn alias(&self) -> Option<Alias> {
@@ -479,7 +479,7 @@ impl Field {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct FragmentSpread {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl FragmentSpread {
     pub fn dotdotdot_token(&self) -> Option<SyntaxToken> {
@@ -494,7 +494,7 @@ impl FragmentSpread {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct InlineFragment {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl InlineFragment {
     pub fn dotdotdot_token(&self) -> Option<SyntaxToken> {
@@ -512,7 +512,7 @@ impl InlineFragment {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct Alias {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl Alias {
     pub fn name(&self) -> Option<Name> {
@@ -524,7 +524,7 @@ impl Alias {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct Arguments {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl Arguments {
     pub fn l_paren_token(&self) -> Option<SyntaxToken> {
@@ -539,7 +539,7 @@ impl Arguments {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct Argument {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl Argument {
     pub fn name(&self) -> Option<Name> {
@@ -554,7 +554,7 @@ impl Argument {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct FragmentName {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl FragmentName {
     pub fn name(&self) -> Option<Name> {
@@ -563,7 +563,7 @@ impl FragmentName {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct TypeCondition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl TypeCondition {
     pub fn on_token(&self) -> Option<SyntaxToken> {
@@ -575,7 +575,7 @@ impl TypeCondition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct NamedType {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl NamedType {
     pub fn name(&self) -> Option<Name> {
@@ -584,7 +584,7 @@ impl NamedType {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct Variable {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl Variable {
     pub fn dollar_token(&self) -> Option<SyntaxToken> {
@@ -596,12 +596,12 @@ impl Variable {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct StringValue {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl StringValue {}
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct FloatValue {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl FloatValue {
     pub fn float_token(&self) -> Option<SyntaxToken> {
@@ -610,7 +610,7 @@ impl FloatValue {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct IntValue {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl IntValue {
     pub fn int_token(&self) -> Option<SyntaxToken> {
@@ -619,7 +619,7 @@ impl IntValue {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct BooleanValue {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl BooleanValue {
     pub fn true_token(&self) -> Option<SyntaxToken> {
@@ -631,7 +631,7 @@ impl BooleanValue {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct NullValue {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl NullValue {
     pub fn null_token(&self) -> Option<SyntaxToken> {
@@ -640,7 +640,7 @@ impl NullValue {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct EnumValue {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl EnumValue {
     pub fn name(&self) -> Option<Name> {
@@ -649,7 +649,7 @@ impl EnumValue {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct ListValue {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl ListValue {
     pub fn l_brack_token(&self) -> Option<SyntaxToken> {
@@ -664,7 +664,7 @@ impl ListValue {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct ObjectValue {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl ObjectValue {
     pub fn l_curly_token(&self) -> Option<SyntaxToken> {
@@ -679,7 +679,7 @@ impl ObjectValue {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct ObjectField {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl ObjectField {
     pub fn name(&self) -> Option<Name> {
@@ -694,7 +694,7 @@ impl ObjectField {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct VariableDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl VariableDefinition {
     pub fn variable(&self) -> Option<Variable> {
@@ -715,7 +715,7 @@ impl VariableDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct DefaultValue {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl DefaultValue {
     pub fn eq_token(&self) -> Option<SyntaxToken> {
@@ -727,7 +727,7 @@ impl DefaultValue {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct ListType {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl ListType {
     pub fn l_brack_token(&self) -> Option<SyntaxToken> {
@@ -742,7 +742,7 @@ impl ListType {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct NonNullType {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl NonNullType {
     pub fn named_type(&self) -> Option<NamedType> {
@@ -757,7 +757,7 @@ impl NonNullType {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct Directive {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl Directive {
     pub fn at_token(&self) -> Option<SyntaxToken> {
@@ -772,7 +772,7 @@ impl Directive {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct Description {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl Description {
     pub fn string_value(&self) -> Option<StringValue> {
@@ -781,7 +781,7 @@ impl Description {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct RootOperationTypeDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl RootOperationTypeDefinition {
     pub fn operation_type(&self) -> Option<OperationType> {
@@ -796,7 +796,7 @@ impl RootOperationTypeDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct ImplementsInterfaces {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl ImplementsInterfaces {
     pub fn implements_token(&self) -> Option<SyntaxToken> {
@@ -811,7 +811,7 @@ impl ImplementsInterfaces {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct FieldsDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl FieldsDefinition {
     pub fn l_curly_token(&self) -> Option<SyntaxToken> {
@@ -826,7 +826,7 @@ impl FieldsDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct FieldDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl FieldDefinition {
     pub fn description(&self) -> Option<Description> {
@@ -850,7 +850,7 @@ impl FieldDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct ArgumentsDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl ArgumentsDefinition {
     pub fn l_paren_token(&self) -> Option<SyntaxToken> {
@@ -865,7 +865,7 @@ impl ArgumentsDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct InputValueDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl InputValueDefinition {
     pub fn description(&self) -> Option<Description> {
@@ -889,7 +889,7 @@ impl InputValueDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct UnionMemberTypes {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl UnionMemberTypes {
     pub fn eq_token(&self) -> Option<SyntaxToken> {
@@ -904,7 +904,7 @@ impl UnionMemberTypes {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct EnumValuesDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl EnumValuesDefinition {
     pub fn l_curly_token(&self) -> Option<SyntaxToken> {
@@ -919,7 +919,7 @@ impl EnumValuesDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct EnumValueDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl EnumValueDefinition {
     pub fn description(&self) -> Option<Description> {
@@ -934,7 +934,7 @@ impl EnumValueDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct InputFieldsDefinition {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl InputFieldsDefinition {
     pub fn l_curly_token(&self) -> Option<SyntaxToken> {
@@ -949,7 +949,7 @@ impl InputFieldsDefinition {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct DirectiveLocations {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl DirectiveLocations {
     pub fn directive_locations(&self) -> AstChildren<DirectiveLocation> {
@@ -958,7 +958,7 @@ impl DirectiveLocations {
 }
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct DirectiveLocation {
-    pub(crate) syntax: SyntaxNode,
+    pub syntax: SyntaxNode,
 }
 impl DirectiveLocation {
     pub fn query_token(&self) -> Option<SyntaxToken> {
